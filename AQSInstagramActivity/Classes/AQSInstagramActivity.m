@@ -39,11 +39,7 @@ NSString *const kAQSInstagramURLScheme = @"instagram://app";
 }
 
 - (UIImage *)activityImage {
-    if ([[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."][0] intValue] >= 8) {
-        return [UIImage imageNamed:[NSString stringWithFormat:@"color_%@", NSStringFromClass([self class])]];
-    } else {
-        return [UIImage imageNamed:NSStringFromClass([self class])];
-    }
+    return [UIImage imageNamed:NSStringFromClass([self class])];
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
