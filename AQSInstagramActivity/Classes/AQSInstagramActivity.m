@@ -39,7 +39,7 @@ NSString *const kAQSInstagramURLScheme = @"instagram://app";
 }
 
 - (UIImage *)activityImage {
-    return [UIImage imageNamed:NSStringFromClass([self class])];
+    return [UIImage imageNamed:@"AQSInstagramActivity"];
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
